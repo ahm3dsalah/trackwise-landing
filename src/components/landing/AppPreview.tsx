@@ -27,8 +27,8 @@ const AppPreview = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm opacity-80">Total Balance</p>
-                    <p className="text-xs opacity-60">3 accounts</p>
-                    <p className="text-2xl font-bold mt-1">€13,000.00</p>
+                    <p className="text-xs opacity-60">2 accounts</p>
+                    <p className="text-2xl font-bold mt-1">€12,500.00</p>
                   </div>
                   <div className="bg-green-500 text-white px-3 py-1 rounded-lg text-sm font-medium flex items-center gap-1">
                     <TrendingUp className="w-4 h-4" />
@@ -38,9 +38,8 @@ const AppPreview = () => {
               </div>
 
               {/* Bank Account Cards */}
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 gap-3">
                 {[
-                  { name: "JPMorgan", balance: "€500.00", change: "-50.0%", negative: true },
                   { name: "HSBC", balance: "€5,000.00", change: "+212.5%", negative: false },
                   { name: "BNP", balance: "€7,500.00", change: "+7.1%", negative: false },
                 ].map((account) => (
@@ -64,18 +63,6 @@ const AppPreview = () => {
                     <p className={`text-[10px] ${account.negative ? 'text-red-500' : 'text-green-500'}`}>
                       {account.change} from last reading
                     </p>
-                    {/* Mini chart placeholder */}
-                    <div className="mt-2 h-8 bg-gradient-to-r from-primary/5 to-primary/20 rounded flex items-end">
-                      <svg className="w-full h-6" viewBox="0 0 100 24">
-                        <path
-                          d="M0,20 Q20,15 35,18 T60,12 T100,8"
-                          fill="none"
-                          stroke="hsl(var(--primary))"
-                          strokeWidth="1.5"
-                          className="opacity-60"
-                        />
-                      </svg>
-                    </div>
                   </div>
                 ))}
               </div>

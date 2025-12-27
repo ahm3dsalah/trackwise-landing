@@ -31,7 +31,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Trackwise - Smart Budget & Bank Account Tracking</title>
+        <title>Trackwise</title>
         <meta 
           name="description" 
           content="Organize your budget, track all your bank accounts, and visualize your cash flow in one beautiful dashboard. Start making smarter financial decisions today." 
