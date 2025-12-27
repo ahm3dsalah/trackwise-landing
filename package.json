@@ -10,9 +10,9 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postbuild": "cp dist/index.html dist/404.html && cp public/_redirects dist/_redirects && cp public/.nojekyll dist/.nojekyll",
+    "postbuild": "cp public/.nojekyll dist/.nojekyll",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -t true"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
