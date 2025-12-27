@@ -24,7 +24,7 @@ const Navbar = () => {
             to="/#app-preview"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            See Trackwise in action
+            Preview
           </Link>
         </div>
 
