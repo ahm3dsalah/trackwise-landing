@@ -2,7 +2,7 @@ import { Building, TrendingUp, MoreVertical, Plus } from "lucide-react";
 
 const AppPreview = () => {
   return (
-    <section className="py-24 bg-background">
+    <section id="app-preview" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">

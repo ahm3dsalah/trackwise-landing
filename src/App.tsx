@@ -20,7 +20,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/features" element={<Index />} />
             <Route path="/how-it-works" element={<Index />} />
-            <Route path="/pricing" element={<Index />} />
+            <Route path="/app-preview" element={<Index />} />
             {/* Catch all routes and render Index for hash navigation */}
             <Route path="*" element={<Index />} />
           </Routes>

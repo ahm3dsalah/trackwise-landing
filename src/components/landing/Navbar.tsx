@@ -21,16 +21,10 @@ const Navbar = () => {
             Features
           </Link>
           <Link 
-            to="/#how-it-works"
+            to="/#app-preview"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            How It Works
-          </Link>
-          <Link 
-            to="/#pricing"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Pricing
+            See Trackwise in action
           </Link>
         </div>
 
