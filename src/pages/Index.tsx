@@ -31,11 +31,29 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Trackwise</title>
+        <title>TrackWise - Expense Tracking Made Simple</title>
         <meta 
           name="description" 
-          content="Organize your budget, track all your bank accounts, and visualize your cash flow in one beautiful dashboard. Start making smarter financial decisions today." 
+          content="TrackWise - Simplify your expense tracking with our intuitive application. Manage your finances effortlessly with our powerful expense tracking tools." 
         />
+        <meta name="keywords" content="expense tracking, finance management, budget tracking, personal finance, expense app, financial tools" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#000000" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://trackwise.me/" />
+        <meta property="og:title" content="TrackWise - Expense Tracking Made Simple" />
+        <meta property="og:description" content="Simplify your expense tracking with our intuitive application. Manage your finances effortlessly with our powerful expense tracking tools." />
+        <meta property="og:image" content="https://trackwise.me/og-image.jpg" />
+        <meta property="og:image:alt" content="TrackWise Expense Tracking Application" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://trackwise.me/" />
+        <meta name="twitter:title" content="TrackWise - Expense Tracking Made Simple" />
+        <meta name="twitter:description" content="Simplify your expense tracking with our intuitive application. Manage your finances effortlessly with our powerful expense tracking tools." />
+        <meta name="twitter:image" content="https://trackwise.me/twitter-image.jpg" />
       </Helmet>
       
       <div className="min-h-screen bg-background">
