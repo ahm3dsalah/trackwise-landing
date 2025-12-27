@@ -2,11 +2,9 @@ import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "@/components/landing/Navbar";
-import Hero from "@/components/landing/Hero";
 import Features from "@/components/landing/Features";
 import AppPreview from "@/components/landing/AppPreview";
 import HowItWorks from "@/components/landing/HowItWorks";
-import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
@@ -43,11 +41,9 @@ const Index = () => {
       <div className="min-h-screen bg-background">
         <Navbar />
         <main>
-          <Hero />
-          <Features />
           <AppPreview />
+          <Features />
           <HowItWorks />
-          <CTA />
         </main>
         <Footer />
       </div>

@@ -4,12 +4,12 @@ const AppPreview = () => {
   return (
     <section id="app-preview" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            See Trackwise in action
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            Get a glimpse of how our app helps you manage your finances effortlessly.
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground leading-tight mb-6">
+            Take control of your <span className="text-gradient">finances</span>
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
+            Organize your budget, track all your bank accounts, and visualize your cash flow in one beautiful dashboard. Start making smarter financial decisions today.
           </p>
         </div>
 
@@ -40,9 +40,9 @@ const AppPreview = () => {
               {/* Bank Account Cards */}
               <div className="grid grid-cols-3 gap-3">
                 {[
-                  { name: "N26", balance: "€500.00", change: "-50.0%", negative: true },
-                  { name: "Sparkasse", balance: "€5,000.00", change: "+212.5%", negative: false },
-                  { name: "CommerzBank", balance: "€7,500.00", change: "+7.1%", negative: false },
+                  { name: "JPMorgan", balance: "€500.00", change: "-50.0%", negative: true },
+                  { name: "HSBC", balance: "€5,000.00", change: "+212.5%", negative: false },
+                  { name: "BNP", balance: "€7,500.00", change: "+7.1%", negative: false },
                 ].map((account) => (
                   <div key={account.name} className="bg-muted/30 rounded-lg p-3 border border-border">
                     <div className="flex items-center justify-between mb-2">
@@ -159,7 +159,7 @@ const AppPreview = () => {
               {/* Amount Left */}
               <div className="text-center bg-muted/30 rounded-lg p-3 border border-border">
                 <p className="text-xs text-muted-foreground">Amount Left to Spend</p>
-                <p className="text-xl font-bold text-foreground">$-10.00</p>
+                <p className="text-xl font-bold text-foreground">$1,200</p>
               </div>
             </div>
           </div>

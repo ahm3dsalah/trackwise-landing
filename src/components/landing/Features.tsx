@@ -13,7 +13,7 @@ const features = [
   {
     icon: Building2,
     title: "Bank Account Tracking",
-    description: "Connect and monitor all your bank accounts in one unified dashboard.",
+    description: "Add your bank accounts and log balances to track your finances in one unified dashboard.",
   },
   {
     icon: PieChart,

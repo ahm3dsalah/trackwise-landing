@@ -30,10 +30,10 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <Button variant="ghost" className="text-sm">
-            Log In
+            Login
           </Button>
           <Button className="text-sm gradient-hero border-0">
-            Get Started
+            Register Now
           </Button>
         </div>
       </div>

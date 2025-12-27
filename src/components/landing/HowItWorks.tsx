@@ -2,7 +2,7 @@ const steps = [
   {
     number: "01",
     title: "Connect Your Accounts",
-    description: "Link your bank accounts securely to get a complete view of your finances in one place.",
+    description: "Add your bank accounts and log balances to get a complete view of your finances in one place."
   },
   {
     number: "02",
