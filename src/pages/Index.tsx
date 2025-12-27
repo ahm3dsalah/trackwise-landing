@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import Features from "@/components/landing/Features";
@@ -8,6 +10,26 @@ import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Check for hash in the URL after component renders
+    const hash = location.hash;
+    if (hash) {
+      const elementId = hash.replace('#', '');
+      // Small delay to ensure DOM is rendered
+      setTimeout(() => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <>
       <Helmet>
