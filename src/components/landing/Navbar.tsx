@@ -29,12 +29,12 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <a href="http://localhost:3000/login" target="_self">
+          <a href="https://track.trackwise.me/login" target="_self">
             <Button variant="ghost" className="text-sm">
               Login
             </Button>
           </a>
-          <a href="http://localhost:3000/register" target="_self">
+          <a href="https://track.trackwise.me/register" target="_self">
             <Button className="text-sm gradient-hero border-0">
               Register Now
             </Button>
