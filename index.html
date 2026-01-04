@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackWise - Expense Tracking Made Simple</title>
+    <meta name="description" content="TrackWise - Simplify your expense tracking with our intuitive application. Manage your finances effortlessly with our powerful expense tracking tools." />
+    <meta name="author" content="TrackWise" />
+    <meta name="keywords" content="expense tracking, finance management, budget tracking, personal finance, expense app, financial tools" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://trackwise.me/" />
+    <meta property="og:title" content="TrackWise - Expense Tracking Made Simple" />
+    <meta property="og:description" content="Simplify your expense tracking with our intuitive application. Manage your finances effortlessly with our powerful expense tracking tools." />
+    <meta property="og:image" content="https://trackwise.me/og-image.jpg" />
+    <meta property="og:image:alt" content="TrackWise Expense Tracking Application" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://trackwise.me/" />
+    <meta name="twitter:title" content="TrackWise - Expense Tracking Made Simple" />
+    <meta name="twitter:description" content="Simplify your expense tracking with our intuitive application. Manage your finances effortlessly with our powerful expense tracking tools." />
+    <meta name="twitter:image" content="https://trackwise.me/twitter-image.jpg" />
+    <link rel="icon" type="image/png" href="/trackwise-icon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script type="module" crossorigin src="/assets/index-2TytnU7J.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-Cbb3Y1W-.js">
+    <link rel="stylesheet" crossorigin href="/assets/style-D9a5CKI0.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <div id="cookie-consent-banner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: white; padding: 15px; text-align: center; z-index: 1000;">
+        <p style="margin: 0;">We use cookies to enhance your experience. By clicking "Accept", you agree to our use of cookies for analytics purposes.
+            <button id="cookie-consent-accept" style="margin-left: 15px; padding: 5px 10px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Accept</button>
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const consentBanner = document.getElementById('cookie-consent-banner');
+            const acceptButton = document.getElementById('cookie-consent-accept');
+
+            // Check if consent is already given
+            if (!getCookie('user_consent_given')) {
+                consentBanner.style.display = 'block';
+            } else {
+                loadGoogleAnalytics();
+            }
+
+            acceptButton.addEventListener('click', function() {
+                setCookie('user_consent_given', 'true', 365);
+                consentBanner.style.display = 'none';
+                loadGoogleAnalytics();
+            });
+
+            function setCookie(name, value, days) {
+                let expires = "";
+                if (days) {
+                    const date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+            }
+
+            function getCookie(name) {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for(let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            function loadGoogleAnalytics() {
+
+                const script = document.createElement('script');
+                script.src = "https://www.googletagmanager.com/gtag/js?id=G-8YX6H047CJ";
+                script.async = true;
+                document.head.appendChild(script);
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-8YX6H047CJ');
+            }
+        });
+    </script>
+  </body>
+</html>
