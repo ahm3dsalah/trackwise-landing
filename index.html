@@ -77,18 +77,16 @@
             }
 
             function loadGoogleAnalytics() {
-                // Replace with your Google Analytics tracking ID
-                const gaTrackingId = '8YX6H047CJ';
 
                 const script = document.createElement('script');
-                script.src = `https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`;
+                script.src = "https://www.googletagmanager.com/gtag/js?id=G-8YX6H047CJ";
                 script.async = true;
                 document.head.appendChild(script);
 
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', gaTrackingId);
+                gtag('config', 'G-8YX6H047CJ');
             }
         });
     </script>
